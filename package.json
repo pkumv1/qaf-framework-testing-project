@@ -1,0 +1,19 @@
+{
+  "name": "qaf-framework-testing-project",
+  "version": "1.0.0",
+  "description": "Testing project for QAF framework using Playwright, Selenium, and Puppeteer",
+  "main": "run_tests.js",
+  "scripts": {
+    "test": "node run_tests.js",
+    "test:playwright": "playwright test test_scripts/playwright/",
+    "test:selenium": "mocha test_scripts/selenium/ --timeout 30000",
+    "test:puppeteer": "mocha test_scripts/puppeteer/ --timeout 30000"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.37.0",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "puppeteer": "^21.0.0",
+    "selenium-webdriver": "^4.11.1"
+  }
+}
