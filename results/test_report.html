@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QAF Testing Project - Test Results</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #333; }
+    .framework { margin-bottom: 30px; }
+    .framework h2 { color: #555; }
+    .success { color: green; }
+    .failure { color: red; }
+    pre { background: #f5f5f5; padding: 10px; border-radius: 5px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <h1>QAF Testing Project - Test Results</h1>
+  <div class="summary">
+    <h2>Summary</h2>
+    <ul>
+      <li>playwright: <span class="success">PASSED</span></li>
+      <li>selenium: <span class="success">PASSED</span></li>
+      <li>puppeteer: <span class="success">PASSED</span></li>
+    </ul>
+  </div>
+  
+  <div class="framework">
+    <h2>Playwright Results</h2>
+    <div class="status">Status: <span class="success">PASSED</span></div>
+    <h3>Output:</h3>
+    <pre>
+Running 4 tests using 1 worker
+
+  ✓ successful login with valid credentials (1.3s)
+  ✓ error message with invalid credentials (956ms)
+  ✓ password masking functionality (721ms)
+  ✓ remember me functionality (1.5s)
+
+4 passed (4.5s)
+    </pre>
+  </div>
+  
+  <div class="framework">
+    <h2>Selenium Results</h2>
+    <div class="status">Status: <span class="success">PASSED</span></div>
+    <h3>Output:</h3>
+    <pre>
+Login Functionality Tests
+  ✓ should login successfully with valid credentials (2541ms)
+  ✓ should show error message with invalid credentials (1989ms)
+  ✓ should mask password input (1265ms)
+  ✓ should remember username when "Remember Me" is checked (3102ms)
+
+4 passing (8.9s)
+    </pre>
+  </div>
+  
+  <div class="framework">
+    <h2>Puppeteer Results</h2>
+    <div class="status">Status: <span class="success">PASSED</span></div>
+    <h3>Output:</h3>
+    <pre>
+Login Functionality Tests
+  ✓ should login successfully with valid credentials (1854ms)
+  ✓ should show error message with invalid credentials (1532ms)
+  ✓ should mask password input (1021ms)
+  ✓ should remember username when "Remember Me" is checked (2354ms)
+
+4 passing (6.8s)
+    </pre>
+  </div>
+</body>
+</html>
